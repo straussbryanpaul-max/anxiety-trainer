@@ -1,0 +1,77 @@
+.section {
+  background: #2f2f2f;
+  padding: 16px 16px 18px;
+  min-width: 160px;
+}
+
+.sectionTitle {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.18em;
+  color: #c8942a;
+  text-align: center;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 4px 0;
+  border-bottom: 1px solid #4a4a4a;
+  transition: opacity 0.15s;
+  user-select: none;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.item:hover .checkbox {
+  border-color: #c8942a;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid #666;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: border-color 0.2s, background 0.2s;
+  background: transparent;
+}
+
+.item.checked .checkbox {
+  border-color: #c8942a;
+  background: #c8942a20;
+}
+
+.checkmark {
+  font-size: 0.75rem;
+  color: #c8942a;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.label {
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.85rem;
+  color: #ccc;
+  transition: color 0.2s;
+}
+
+.item.checked .label {
+  color: #f0f0f0;
+}
